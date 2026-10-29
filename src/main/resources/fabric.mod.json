@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "lumyrei",
+	"version": "${version}",
+	"name": "LumyREI (Unofficial 1.20.1 Backport)",
+	"description": "Unofficial Minecraft 1.20.1 backport of LumyREI's Cobblemon brewing recipe display for REI. Campfire Pot integration is unavailable in Cobblemon 1.5.2; the optional Stark Forge integration is not included in this backport.",
+	"authors": [
+		"LUMYVERSE",
+		"JustHari01 (unofficial backport)"
+	],
+	"contact": {
+		"homepage": "https://github.com/LUMYVERSE/LumyREI"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/lumyrei/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"rei_client": [
+			"com.lumyverse.lumyrei.LumyREI"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+	    "fabric-language-kotlin": ">=1.12.3",
+	    "cobblemon": ">=1.5.2",
+	    "roughlyenoughitems": ">=12.1.785"
+	}
+}
